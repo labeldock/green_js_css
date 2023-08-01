@@ -1,3 +1,3 @@
-$('body').on('click', '.popup-close' ,()=>{
-    console.log('GPGP')
+$('#popup button').on('click', (event)=>{
+    $(document.body).removeClass('popupshow');
 })
