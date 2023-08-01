@@ -4,14 +4,14 @@ body.no-scroll { overflow: hidden; }
 
 #popup { position: fixed; background-color: white; text-align: center; box-sizing: border-box; padding: 15px; line-height: 1.8; z-index: 10000000; border: 1px solid #f1f1f1; display: none; border-radius: 20px; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3); top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 600px; max-height: 600px; width: calc(100vw - 40px); }
 
-@media (max-width: 521px) { #popup { top: 0; bottom: 0; left: 0; right: 0; margin: auto; transform: translate(0px, 0px); width: calc(100vw - 4px); height: calc(100vh - 4px); border-radius: 0; padding: 20px; } }
+@media (max-width: 520px) { #popup { top: 0; bottom: 0; left: 0; right: 0; margin: auto; transform: translate(0px, 0px); width: calc(100vw - 4px); height: calc(100vh - 4px); border-radius: 0; padding: 20px; } }
 
 .popupshow #popup { display: block; }
 
 .popupshow:before { content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.6; z-index: 9999999; }
 
-@media (min-width: 520px) { #popup button { position: absolute; right: 0; bottom: 100%; background-color: transparent; width: 3rem; height: 3rem; border: 0; cursor: pointer; font-size: 0px; }
-  #popup button::before, #popup button::after { content: "123"; display: block; height: 2px; background-color: white; position: absolute; width: 36px; height: 1px; }
+@media (min-width: 521px) { #popup button { position: absolute; right: 0; bottom: 100%; background-color: transparent; width: 3rem; height: 3rem; border: 0; cursor: pointer; font-size: 0px; }
+  #popup button::before, #popup button::after { content: ""; display: block; height: 2px; background-color: white; position: absolute; width: 36px; height: 1px; }
   #popup button::before { transform: rotate(45deg); }
   #popup button::after { transform: rotate(-45deg); } }
 

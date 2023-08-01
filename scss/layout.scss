@@ -27,7 +27,7 @@ body.no-scroll {
     max-height: 600px; // 최대 높이
     width: calc(100vw - 40px); // 100%에서 40px을 뺀다.
     
-    @media (max-width: 521px) {
+    @media (max-width: 520px) {
         top:0;
         bottom:0;
         left:0;
@@ -59,7 +59,7 @@ body.no-scroll {
 }
 
 #popup button {
-    @media (min-width: 520px) {
+    @media (min-width: 521px) {
         position: absolute;
         right:0;
         bottom:100%;
@@ -70,7 +70,7 @@ body.no-scroll {
         cursor: pointer;
         font-size: 0px;
         &::before, &::after {
-            content: "123";
+            content: "";
             display: block;
             height: 2px;
             background-color: white;
