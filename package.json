@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "watch:html": "live-server --wait=200",
-    "watch:scss": "node-sass --output-style compact --watch scss --output css",
-    "scss": "node-sass --output-style compact --recursive scss --output css",
+    "watch:scss": "node-sass --output-style compact --source-map true --watch scss --output css",
+    "scss": "node-sass --output-style compact --source-map true --recursive scss --output css",
     "start": "npm run scss && concurrently \"yarn watch:html\" \"yarn watch:scss\""
   },
   "author": "",
