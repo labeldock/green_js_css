@@ -17,7 +17,6 @@ body.no-scroll {
     border:1px solid #f1f1f1;
     display: none;
     border-radius: 20px;
-    overflow: hidden;
     box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
     
     top:50%;
@@ -28,8 +27,7 @@ body.no-scroll {
     max-height: 600px; // 최대 높이
     width: calc(100vw - 40px); // 100%에서 40px을 뺀다.
     
-    
-    @media (max-width: 520px) {
+    @media (max-width: 521px) {
         top:0;
         bottom:0;
         left:0;
@@ -58,4 +56,35 @@ body.no-scroll {
         opacity: 0.6;
         z-index: 9999999;
     }
+}
+
+#popup button {
+    @media (min-width: 520px) {
+        position: absolute;
+        right:0;
+        bottom:100%;
+        background-color: transparent;
+        width: 3rem;
+        height: 3rem;
+        border: 0;
+        cursor: pointer;
+        font-size: 0px;
+        &::before, &::after {
+            content: "123";
+            display: block;
+            height: 2px;
+            background-color: white;
+            position: absolute;
+            width: 36px;
+            height: 1px;
+        }
+        &::before {
+            transform: rotate(45deg);
+        }
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+    
+
 }
