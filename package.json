@@ -1,0 +1,19 @@
+{
+  "name": "project_720",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:html": "live-server --wait=200",
+    "watch:scss": "node-sass --output-style compact --watch scss --output css",
+    "scss": "node-sass --output-style compact --recursive scss --output css",
+    "start": "npm run scss && concurrently \"yarn watch:html\" \"yarn watch:scss\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0",
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
