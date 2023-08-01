@@ -22,6 +22,15 @@ $(window).on('scroll', ()=>{
     }
 })
 
+$('dt').on('click', (event)=>{
+    const $dt = $(event.currentTarget)
+    if($dt.is(".open")){
+        $dt.removeClass("open")
+    } else {
+        $dt.addClass("open")
+    }
+})
+
 // 제이쿼리 간단한 문법
 // 1. $("스타일선택자와 같은 문법")
 // -> 단 가상선택자는 제이쿼리에서는 사용할 수 없다.

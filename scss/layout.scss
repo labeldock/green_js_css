@@ -85,6 +85,46 @@ body.no-scroll {
             transform: rotate(-45deg);
         }
     }
-    
+}
 
+#faq {
+    max-width: 800px;
+    margin: 50px auto;
+}
+#faq dt {
+    border-bottom:1px solid #222;
+    line-height: 2;
+    font-size:1.5em;
+    text-indent: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#faq dt:hover {
+    color:red;
+}
+#faq dt:after {
+    content: "▼";
+}
+#faq dt.open:after, #faq dt:hover:after {
+    content: "▲";
+}
+#faq dt.open {
+    color:red;
+}
+#faq dt:hover + dd,
+#faq dd:hover,
+#faq dt.open + dd {
+    max-height: 100px;
+}
+#faq dd {
+    background-color:#ccc;
+    box-sizing: border-box;
+    max-height: 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: 0.5s;
+    div {
+        padding: 15px;
+    }
 }
